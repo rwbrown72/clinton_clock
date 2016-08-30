@@ -1,14 +1,22 @@
+#years,
+#months,
+#days,
+#minutes,
+#seconds {
+	font-size: 5em;
+}
 
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
-
-
-
-
-
+.smile {
+	height:350px;
+	background-image:url(../img/clinton_smile.jpg);
+	background-size: cover;
+}
 
 
 
