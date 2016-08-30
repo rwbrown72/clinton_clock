@@ -7,8 +7,8 @@ function clock_update() {
 	var year = today.getFullYear();   // This will get the current year
 	var month = today.getMonth();	  // This will get the month
 	var day = today.getDate();		  // This will get the day of the month
-	var minute = today.getMinutes(); // This will get the minutes of the day
-	var second = today.getSeconds(); // This will get the seconds of the day
+	var minute = today.getMinutes();  // This will get the minutes of the day
+	var second = today.getSeconds();  // This will get the seconds of the day
 
 	// This will display the current date in the title area of the page
 	document.getElementById('current_date').innerHTML = (month+1) + " / " + day + " / " + year;
@@ -19,7 +19,7 @@ function clock_update() {
 	var p_year = press_cenference_date.getFullYear();  // This sets the year of the last press conference
 	var p_month = press_cenference_date.getMonth();    // This sets the month of the last press conference
 	var p_day = press_cenference_date.getDate();	   // This sets the day of the last press conference
-	var p_minute = press_cenference_date.getMinutes();// This sets the minutes of the last press conference
+	var p_minute = press_cenference_date.getMinutes(); // This sets the minutes of the last press conference
 	var p_second = press_cenference_date.getSeconds(); // This sets the seconds of the last press conference
 
 
