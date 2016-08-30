@@ -13,9 +13,10 @@
 }
 
 .smile {
-	height:350px;
+	height:600px;
 	background-image:url(../img/clinton_smile.jpg);
 	background-size: cover;
+	background-position: center center;
 }
 
 

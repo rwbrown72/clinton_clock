@@ -30,7 +30,7 @@ function clock_update() {
 	var years_since_press_conference_display = years_since_press_conference - 1; 
 	
 	//This is used to get the number of months from the last press conference but discounted for the years since. This would factor in the number of years. 
-	var months_since_press_conference = month - p_month + (12 * years_since_press_conference);
+	var months_since_press_conference = 12 - p_month + month;
 	
 	//This will take the number of days in the month minus the date of the press conference to get the number of days since the last press conference. This is using the absoulte value of the resulting number to display the correct number of days. 
 	var days_since_press_conference = Math.abs(day - p_day);
