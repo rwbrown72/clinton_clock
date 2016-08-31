@@ -3,13 +3,14 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    <Russell Brown> -- <Developer> -- <@russellbrownco>
 
 # THANKS
 
-    <name>
+    <Russell Brown>
 
 # TECHNOLOGY COLOPHON
 
     HTML5, CSS3
     jQuery, Modernizr
+    Javascript
