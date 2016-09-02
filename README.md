@@ -5,7 +5,7 @@ I'm using HTML 5-BP for the basic setup. This is just a fun exercise for me to w
 
 <em>It isn't meant to be a political statement. </em>
 
-
+You can find it online at <a href="http://grumblemore.com" target="_blank">Grumblmore.com</a>
 
 <hr>
 If you look at the main.js vs. the clock.js files you can see the changes I made to the algorithm. 
