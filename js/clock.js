@@ -20,13 +20,12 @@ function clock_update() {
 		number_of_days_previous_month = new Date(year - 1, month, day - 1);
 	}
 
-
 	// This will display the current date in the title area of the page
 	document.getElementById('current_date').innerHTML = (month+1) + " / " + day + " / " + year;
 
 
 	// This area will set the date of the last press conference
-	var press_cenference_date = new Date(2015, 11, 5)  // This sets the date of the last press conference - remember that Javascript starts in Jan at month [0]!
+	var press_cenference_date = new Date(2015, 11, 6)  // This sets the date of the last press conference - remember that Javascript starts in Jan at month [0]!
 	var p_year = press_cenference_date.getFullYear();  // This sets the year of the last press conference
 	var p_month = press_cenference_date.getMonth();    // This sets the month of the last press conference
 	var p_day = press_cenference_date.getDate();	   // This sets the day of the last press conference
@@ -51,9 +50,10 @@ function clock_update() {
 	var months_since_press_conference = ((12 - p_month) + month)%12;	
 		
 	//This will take the number of days in the month minus the date of the press conference to get the number of days since the last press conference. This is using the absoulte value of the resulting number to display the correct number of days. 
-	var days_since_press_conference =  day - p_day;
+	var days_since_press_conference = day - p_day;
+
 	if (days_since_press_conference < 0) {
-		days_since_press_conference = number_of_days_previous_month - p_day - day;
+		days_since_press_conference = number_of_days_previous_month - p_day + day;
 		months_since_press_conference = months_since_press_conference - 1;
 	}
 
@@ -74,4 +74,4 @@ function clock_update() {
 	// This will update the time once per second
 	setTimeout(clock_update, 1000)
 }
-
+ 
