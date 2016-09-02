@@ -9,6 +9,17 @@ function clock_update() {
 	var day = today.getDate();		  // This will get the day of the month
 	var minute = today.getMinutes();  // This will get the minutes of the day
 	var second = today.getSeconds();  // This will get the seconds of the day
+	var last_month = month - 1;		  // This will get the previous month
+
+	// This next line will get the last day of the previous month. 
+	var previous_month_last_day = new Date(year, month, 0); 
+	var number_of_days_previous_month = previous_month_last_day.getDate(); // This will get the last day of the previous month so that we can calculate the number of days to the press conference date when the date is less than the press conference date. i.e.  today is the first and the last pressconference was on the 5th. This is how to handle this situation while making it dynamic. I'm sure there is a better way and I'd love some input if you have time! Thanks! 
+
+	// This should catch the edge case for January
+	if (month == 0) {
+		number_of_days_previous_month = new Date(year - 1, month, day - 1);
+	}
+
 
 	// This will display the current date in the title area of the page
 	document.getElementById('current_date').innerHTML = (month+1) + " / " + day + " / " + year;
@@ -41,6 +52,10 @@ function clock_update() {
 		
 	//This will take the number of days in the month minus the date of the press conference to get the number of days since the last press conference. This is using the absoulte value of the resulting number to display the correct number of days. 
 	var days_since_press_conference =  day - p_day;
+	if (days_since_press_conference < 0) {
+		days_since_press_conference = number_of_days_previous_month - p_day - day;
+		months_since_press_conference = months_since_press_conference - 1;
+	}
 
 	// This is a simple calculation to get the minutes from the top of the hour. I didn't have the exact press conference start time so, I assumed it started at the top of the hour. 
 	var minutes_since_press_conference = minute - p_minute;
