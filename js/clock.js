@@ -51,14 +51,14 @@ function clock_update() {
 	//This is used to get the number of months from the last press conference but discounted for the years since. This would factor in the number of years. 
 	var months_since_press_conference = ((12 - p_month) + month)%12;	
 		
-	//This will take the number of days in the month minus the date of the press conference to get the number of days since the last press conference. This is using the absoulte value of the resulting number to display the correct number of days. 
+	//This will take the number of days in the month minus the date of the press conference to get the number of days since the last press conference. 
 	var days_since_press_conference = day - p_day;
 
 	if (days_since_press_conference < 0) {
 		days_since_press_conference = number_of_days_previous_month - p_day + day;
 		months_since_press_conference = months_since_press_conference - 1;
 	}
-
+	//This will get the number of hours since the last press conference. 
   var hours_since_press_conference = hour - p_hour;
   if (hour - p_hour < 0) {
   	hours_since_press_conference = 24 - p_hour;
