@@ -26,7 +26,7 @@ function clock_update() {
 
 
 	// This area will set the date of the last press conference
-	var press_cenference_date = new Date(2015, 11, 5, 12)  // This sets the date of the last press conference - remember that Javascript starts in Jan at month [0]!
+	var press_cenference_date = new Date(2015, 11, 5, 15)  // This sets the date of the last press conference - remember that Javascript starts in Jan at month [0]!
 	var p_year = press_cenference_date.getFullYear();  // This sets the year of the last press conference
 	var p_month = press_cenference_date.getMonth();    // This sets the month of the last press conference
 	var p_day = press_cenference_date.getDate();	   // This sets the day of the last press conference
