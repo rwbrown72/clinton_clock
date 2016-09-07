@@ -60,6 +60,10 @@ function clock_update() {
 	}
 
   var hours_since_press_conference = hour - p_hour;
+  if (hour - p_hour < 0) {
+  	hours_since_press_conference = 24 - p_hour;
+  	days_since_press_conference = days_since_press_conference - 1; 
+  }
 
 	// This is a simple calculation to get the minutes from the top of the hour. I didn't have the exact press conference start time so, I assumed it started at the top of the hour. 
 	var minutes_since_press_conference = minute - p_minute;
