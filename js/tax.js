@@ -1,9 +1,12 @@
 $("button").mouseover(function(){
 
-		$("#trump_face").hide();
+		$("#trump_face").hide("slow");
 
-		var rand_l = Math.floor((Math.random() * 900) + 200);
-		var rand_t = Math.floor((Math.random() * 800) + 200);
+		var width = $(window).width();
+		var height = $(window).height();
+
+		var rand_l = width/Math.random()%width;
+		var rand_t = height/Math.random()%height;
 
 		function animate() {
 			$("#trump").css({"transition": "left 1.5s", "transition":".5s"});
