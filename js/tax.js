@@ -5,8 +5,8 @@ $("button").mouseover(function(){
 		var width = $(window).width();
 		var height = $(window).height();
 
-		var rand_l = width/Math.random()%width;
-		var rand_t = height/Math.random()%height;
+		var rand_l = (width/Math.random() )%width;
+		var rand_t = (height/Math.random() )%height;
 
 		function animate() {
 			$("#trump").css({"transition": "left 1.5s", "transition":".5s"});
