@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Clinton Press Conference Clock</title>
+        <title>Trump Tax Returns</title>
         <meta name="description" content="Funny site about Hillary Clonton">
 
         <!-- Open Graph -->
@@ -28,6 +28,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/animate.css">
         <style>
             body {
                 padding-top: 50px;
@@ -44,66 +45,44 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            
-          </div>
-        </div>
+	      <div class="container">
+	        <div class="navbar-header">
+	          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	            <span class="sr-only">Toggle navigation</span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	          
+	        </div>
+	      </div>
 
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li><a class="navbar-brand" href="#">Today is <span id="current_date"></span></a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.html">Clinton</a></li>
-            <li><a href="click.html">Trump</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li><a class="navbar-brand" href="#">Today is <span id="current_date"></span></a></li>
+		      </ul>
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="index.html">Clinton</a></li>
+		        <li><a href="click.html">Trump</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+	    
+	    <br>
+			<div class="container">
+				<div id="trump_face"></div>
+	    	<h2>For a complete copy of Trump's tax return, please click the button below:</h2>
+	    	<button id="trump" class="btn btn-large btn-success animated wobble">Trump Tax Returns</button>
+			</div>
+			
+			<footer>
+				<div class="container">
+		      <div id="github"><span class="glyphicon glyphicon-link"></span><a href="https://github.com/rwbrown72/clinton_clock"> Github Repo</a></div>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Clinton Press Conference Clock!</h1>
-        <p>Hillary Clinton had her last press conference on:</p>
-        <h3>December 5th, 2015</h3>
-      </div>
-    </div>
-
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-12 smile"></div>
-        <div class="col-md-6 col-md-offset-3">
-          <h2>Time since Last press Conference:</h2>
-          <div id="countup">
-            <p>
-              <span id="years"></span> Years 
-              <span id="months"></span> Months 
-              <span id="days"></span> Days 
-              <span id="hours"></span> Hours
-              <span id="minutes"></span> Minutes 
-              <span id="seconds"></span> Seconds
-            </p>
-          </div>
-        </div>
-          
-
-      </div>
-      <div id="github"><span class="glyphicon glyphicon-link"></span><a href="https://github.com/rwbrown72/clinton_clock"> Github Repo</a></div>
-      <hr>
-
-      <footer>
-        <p>&copy; <a href="http://russellbrown.co">Russell Brown Company</a> <script>document.write(new Date().getFullYear())</script> </p>
-      </footer>
-    </div> <!-- /container -->        
+					<p>&copy; <a href="http://russellbrown.co">Russell Brown Company</a> <script>document.write(new Date().getFullYear())</script> </p>
+				</div>
+		  </footer>
 
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -129,9 +108,9 @@
 
           document.oncontextmenu=new Function("return false")
         </script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="js/vendor/jquery-1.11.2.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
-        <script src="js/clock.js"></script>
+        <script src="js/tax.js"></script>
 
 
     </body>
