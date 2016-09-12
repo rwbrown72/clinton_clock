@@ -19,6 +19,26 @@ $("button").mouseover(function(){
 
 });
 
+$("#trump").click(function(){
+
+			$("#trump_face").hide("slow");
+			$('nav').hide("slow");
+
+			var width = $(window).width();
+			var height = $(window).height();
+
+			var rand_l = (width/Math.random() )%width;
+			var rand_t = (height/Math.random() )%height;
+
+			$("#trump").css({"transition": "left 1.5s", "transition":".5s"});
+			$("#trump").css("left", rand_l);
+			$("#trump").css("top", rand_t);
+	
+
+		animate();
+});
+
+
 
 
 	// This area will set the current date
