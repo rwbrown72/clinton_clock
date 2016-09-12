@@ -12,8 +12,6 @@ $("button").mouseover(function(){
 			$("#trump").css({"transition": "left 1.5s", "transition":".5s"});
 			$("#trump").css("left", rand_l);
 			$("#trump").css("top", rand_t);
-
-			console.log(rand_l);
 		}
 
 		animate();
