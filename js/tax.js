@@ -1,7 +1,9 @@
 $("button").mouseover(function(){
 
-		var rand_l = Math.floor((Math.random() * 800) + 100);
-		var rand_t = Math.floor((Math.random() * 800) + 100);
+		$("#trump_face").hide();
+
+		var rand_l = Math.floor((Math.random() * 900) + 200);
+		var rand_t = Math.floor((Math.random() * 800) + 200);
 
 		function animate() {
 			$("#trump").css({"transition": "left 1.5s", "transition":".5s"});
