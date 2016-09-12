@@ -30,7 +30,7 @@ $("#trump").click(function(){
 			var rand_l = (width/Math.random() )%width;
 			var rand_t = (height/Math.random() )%height;
 
-			$("#trump").css({"transition": "left 1.5s", "transition":".5s"});
+			$("#trump").css({"transition": "left .25s", "transition":".25s"});
 			$("#trump").css("left", rand_l);
 			$("#trump").css("top", rand_t);
 	
