@@ -1,6 +1,7 @@
 $("button").mouseover(function(){
 
 		$("#trump_face").hide("slow");
+		$('nav').hide("slow");
 
 		var width = $(window).width();
 		var height = $(window).height();
